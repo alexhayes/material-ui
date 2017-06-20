@@ -35,6 +35,9 @@ export const light = {
     appBar: grey[100],
     contentFrame: grey[200],
   },
+  line: {
+    stepper: grey[400],
+  },
 };
 
 export const dark = {
@@ -64,6 +67,10 @@ export const dark = {
     appBar: grey[900],
     contentFrame: grey[900],
     status: common.black,
+  },
+  line: {
+    // TODO: What should the dark theme have for stepper line? Not stated in style guide
+    stepper: grey[400],
   },
 };
 
@@ -119,6 +126,7 @@ export default function createPalette(options = {}) {
     input: shades[type].input,
     action: shades[type].action,
     background: shades[type].background,
+    line: shades[type].line,
     primary,
     accent,
     error,
